@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtMainMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:text="Rental Sepeda"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:text="Dashboard"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMainMenu"/>
+        <LinearLayout
+            android:id="@+id/data"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/line1">
+
+            <LinearLayout
+                android:id="@+id/btnDataCostumer"
+                android:layout_width="270dp"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="40dp"
+                android:background="@drawable/idea"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/user"
+                    android:layout_marginBottom="10dp" />
+
+                <View
+                    android:layout_width="85dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="DATA CUSTOMER"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/line3"
+            app:layout_constraintTop_toBottomOf="@+id/line3">
+
+            <LinearLayout
+                android:id="@+id/btndta"
+                android:layout_width="270dp"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="40dp"
+                android:background="@drawable/idea"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/user"
+                    android:layout_marginBottom="10dp" />
+
+                <View
+                    android:layout_width="85dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="DAFTAR USER CUSTOMER"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogoutadmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/idea"
+            app:layout_constraintTop_toBottomOf="@+id/data"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="LOGOUT"
+            android:textColor="@color/white"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
