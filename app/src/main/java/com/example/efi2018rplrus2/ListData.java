@@ -74,10 +74,6 @@ public class ListData extends AppCompatActivity {
 
                                 Model model = new Model();
                                 JSONObject object = data.getJSONObject(i);
-                                model.setId(object.getString("id"));
-                                model.setEmail(object.getString("username"));
-                                model.setNama(object.getString("nama"));
-                                model.setNohp(object.getString("nohp"));
                                 model.setAlamat(object.getString("alamat"));
                                 model.setNoktp(object.getString("noktp"));
                                 DataArrayList.add(model);

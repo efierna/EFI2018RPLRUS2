@@ -5,4 +5,8 @@
     <color name="colorAccent">#1c1c1c</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="DadgerBlue">#1E90FF</color>
+    <color name="Blue">#52B3D9</color>
+
+
 </resources>
